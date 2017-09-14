@@ -1,0 +1,161 @@
+html {
+  margin: 0; padding: 0;
+  height: 100%;
+}
+body {
+  margin: 0;
+  margin-bottom: -150px;
+  background-image: url("../img/webar_back.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+}
+.logo {
+  position: absolute;
+  width: 140px;
+  left: 100px; top: 10px;
+  display: inline;
+}
+.bar {
+  width: 1000px;
+  margin-top: 15px;
+  margin-left: 300px;
+}
+.bar_main {
+  list-style-type: none;
+  margin: 3px;
+}
+.bar_li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  float: left;
+  margin-left: 100px;
+}
+.Project {
+  padding-top: 100px;
+}
+.Project th {
+  color: white;
+}
+/*.login_span {
+  font: 200 21px/1.5 Helvetica, Verdana, sans-serif;
+  color: white;
+  width: 110px; height: 60px; line-height: 60px;
+  display: inline-block; text-align: center;
+  position: absolute;
+  right: 0px; top : 0px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  -moz-transition: background-color 0.4s ease, color 0.4s ease;
+  -o-transition: background-color 0.4s ease, color 0.4s ease;
+  -ms-transition: background-color 0.4s ease, color 0.4s ease;
+}
+.login_span:hover {
+  background-color: white;
+  color: black;
+}*/
+.bar_li a {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: margin 0.4s ease, font-size 0.4s ease;
+  -moz-transition: margin 0.4s ease, font-size 0.4s ease;
+  -o-transition: margin 0.4s ease, font-size 0.4s ease;
+  -ms-transition: margin 0.4s ease, font-size 0.4s ease;
+  transition: margin 0.4s ease,font-size 0.4s ease;
+}
+li a:hover {
+  font-size: 28px;
+  margin-left: -3px;
+}
+/*--------------------------------------------------------------------------*/
+/*                                                                          */
+/*                      This is login form source                           */
+/*                                                                          */
+/*--------------------------------------------------------------------------*/
+/*
+  #login_sub {
+    visibility: hidden;
+    width:400px; height: 230px;
+    position: absolute;
+    left: 563px;
+    top : 210px;
+  }
+  form{
+  width: 400px;
+  height: 230px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  z-index: 5;
+}
+input[type="text"]{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 15px auto;
+  background: #fff;
+  border: 0px;
+  padding: 5px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+input[type="password"]{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 15px auto;
+  background: #fff;
+  border: 0px;
+  padding: 5px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+input[type="text"]:focus{
+  border: 2px solid #1abc9d
+}
+input[type="password"]:focus{
+  border: 2px solid #1abc9d
+}
+input[type="submit"]{
+  display: block;
+  background: #1abc9d;
+  width: 314px;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+  background: #09cca6
+}
+::-webkit-input-placeholder {
+   color: gray;
+}
+:-moz-placeholder { /* Firefox 18-
+   color: gray;
+}
+::-moz-placeholder {  /* Firefox 19+
+   color: gray;
+}
+:-ms-input-placeholder {
+   color: gray;
+}*/
