@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>design</title>
+    <!--This Web Page Is Webar's Web Page-->
+    <!--Designed by jspark-->
+    <!--Last Update : 2017/09/14-->
+    <!--Version : 1.4.2--->
+    <style media="screen">
+    /*--------------------------------------------------------------------------*/
+    /*                      This is loading form source                         */
+    /*--------------------------------------------------------------------------*/
+    #spinner {
+      z-index: 100000;
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -50px;
+      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+      animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-rotateplane {
+        0% { -webkit-transform: perspective(120px) }
+        50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+        100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+      }
+
+      @keyframes sk-rotateplane {
+        0% {
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        } 100% {
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }
+    </style>
+    <script type="text/javascript">
+      /*
+      //--------------------------------------------------------------------------//
+      //                          login form animation(remove)                            //
+      //--------------------------------------------------------------------------//
+      var login_form_showing=0;
+      function change_div(){
+        if(login_form_showing==0) {
+          login_form_showing=1;
+          var sub = document.getElementById("login_sub");
+          sub.style.visibility="visible";
+          var pos = 200;
+          var id = setInterval(frame, 5);
+          function frame() {
+            if (pos == 150) {
+              clearInterval(id);
+            } else {
+              pos--;
+              sub.style.top = pos + 'px';
+            }
+          }
+        }
+      }*/
+      function clock() {
+        // We create a new Date object and assign it to a variable called "time".
+        var time = new Date(),
+        // Access the "getHours" method on the Date object with the dot accessor.
+        hours = time.getHours(),
+        // Access the "getMinutes" method with the dot accessor.
+        minutes = time.getMinutes(),
+        seconds = time.getSeconds();
+
+        document.querySelectorAll(".clock")[0].innerHTML =
+        harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+
+        function harold(standIn) {
+          if (standIn < 10) {
+            standIn = "0" + standIn;
+          }
+          return standIn;
+        }
+      }
+      setInterval(clock, 1000);
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/design.css"/>
+  </head>
+  <body onload="load_fuc()" style="height:100%; overflow:hidden;" class="background">
+    <div id="spinner"></div>
+    <a href="/"><img class="logo" src="../img/WEBAR_logo.png" alt="WEBAR.png"/></div>
+    <div class="bar">
+      <ul class="bar_main">
+        <div class="bar_li"><li><a href="/">소개</a></li></div>
+        <div class="bar_li"><li><a href="/">빈칸</a></li></div>
+        <div class="bar_li"><li><a href="/">빈칸</a></li></div>
+        <div class="bar_li"><li><a href="/">빈칸</a></li></div>
+        <div class="bar_li"><li><a href="/">빈칸</a></li></div>
+      </ul>
+    </div>
+    <div class="clock" style="position:absolute;font-size : 1.75em;left:1200px;top:10px;float: left; color:white;"></div>
+    <!--<span class="login_span" onclick="change_div()">로그인</span>-->
+        <div class="form" id="login_sub" style="visibility:hidden;">
+          <input type="text" class="zocial-dribbble" placeholder="Enter your ID" />
+          <input type="password" placeholder="Password" />
+           <input type="submit" value="Login" />
+      </div>
+      <!--Inner Web Page-->
+      <span style="float:right;display:inline-block;margin-left:20px; margin-top:695px;color:white;">Designed by jspark<br>Developed by jspark</span>
+      <script type="text/javascript">
+        var t;
+        function load_fuc() {
+          t = setTimeout(showpage,2500);
+        }
+        function showpage() {
+          document.getElementById("spinner").style.display = "none";
+        }
+      </script>
+  </body>
+</html>
